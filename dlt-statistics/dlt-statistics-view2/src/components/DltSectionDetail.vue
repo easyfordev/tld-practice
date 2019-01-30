@@ -1,7 +1,7 @@
 <template>
   <div class="dlt-section-detail">
     <!--<h2>{{$store.state.app.hid}}</h2>-->
-    <h1>{{ $route.params.name }}</h1>
+    <h2>{{$props.name}}</h2>
     <!--<button type="button" class="btn btn-success" @click="refreshData" style="margin: 2%">Refresh data</button>-->
     <!--<button type="button" class="btn btn-danger" @click="refreshData" style="margin: 2%">Truncate data</button>-->
     <doughnut-chart :chart-data="datacollection" style="position: absolute; top: 55%; left: 3%;  max-width: 2000px; max-height: 2000px"></doughnut-chart>
@@ -36,16 +36,7 @@ export default {
       datacollection2:{ },
       datacollection3:{ },
       timer: '',
-      num: -1}
-  },
-  computed: {
-    getFullPath () {
-      return this.$route.path
-    }
-  },
-  watch: {
-    getFullPath () {
-      this.getData()
+      num: -1
     }
   },
   created: function () {
@@ -54,10 +45,9 @@ export default {
     // alert(this.num)
   },
   updated () {
-    //   this.num = this.$props.name
-    //   // this.fillData()
-    //   // alert("업데이트ㅡ 되었다 이자식아")
-    // },
+    this.num = this.$props.name
+    // this.fillData()
+    // alert("업데이트ㅡ 되었다 이자식아")
   },
   methods: {
     // refreshData () {
@@ -65,10 +55,6 @@ export default {
     //   this.fillData2()
     //   this.fillData()
     // },
-    getData () {
-      // Call my lovely API
-      alert(this.$params.name)
-    },
     fillData () {
       let ttt = this.num
 

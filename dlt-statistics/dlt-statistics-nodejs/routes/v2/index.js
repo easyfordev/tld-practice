@@ -10,6 +10,7 @@ const apid = require('./apid');
 router.use('/history/store',store);
 router.use('/history/search',search);
 router.use('/history/progress',progress);
+
 router.use('/subtype',subtype);
 router.use('/ecuid',ecuid);
 router.use('/apid',apid);

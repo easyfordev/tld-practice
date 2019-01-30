@@ -6,7 +6,7 @@ var request = require("request");
 var conn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '1234',
+    password: 'easy88ch',
     database: 'dlt',
     multipleStatements: true
 });
@@ -17,18 +17,18 @@ router.get('/subtype', function (req, res, next){
     getIdList()
         .then(function(idList) {
             idList1 = idList;
-            console.log(idList1);
+            // console.log(idList1);
             return getQuery(idList);
         })
         .then(function (sql) {
-            console.log(sql);
+            return getDataSubtype(sql);
         })
-        // .then(function(result) {
-        //     res.status(200).send({
-        //         data: result,
-        //         hid: idList1
-        //     });
-        // })
+        .then(function(result) {
+            res.status(200).send({
+                data: result,
+                hid: idList1
+            });
+        })
 });
 
 module.exports = router;
@@ -52,21 +52,23 @@ function getIdList() {
 }
 function getQuery(idList) {
     return new Promise(function(resolve, reject){
-
         let sql = "";
         idList.forEach(function (item, index, array) {
-            sql.concat('SELECT * FROM dlt.history_data where type="subtype" and hid=?;');
+            sql = sql + 'SELECT * FROM dlt.history_data where type="subtype" and hid=?;';
         });
 
-        // for(let i=0;i<idList.length;i++){
-        //     sql.concat('SELECT * FROM dlt.history_data where type="subtype" and hid=?;');
-        // }
         resolve(sql);
     });
 }
-function getDataSubtype(idList) {
+function getDataSubtype(sql) {
     return new Promise(function(resolve, reject){
-        conn.query(sql, idList, function (error, results) {
+        // let sql = "";
+        // idList.forEach(function (item, index, array) {
+        //     sql = sql + 'SELECT * FROM dlt.history_data where type="subtype" and hid=?;';
+        // });
+        //
+        // console.log(sql);
+        conn.query(sql, idList1, function (error, results) {
             if(error) {
                 reject(error);
             }
