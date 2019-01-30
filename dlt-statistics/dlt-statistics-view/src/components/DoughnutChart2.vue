@@ -16,9 +16,9 @@ export default {
         responsive: true,
         title: {
           display: true,
-          position: "top",
+          position: "bottom",
           text: "ECU id",
-          fontSize: 18,
+          fontSize: 15,
           fontColor: "#111"
         },
         legend: {
@@ -26,7 +26,7 @@ export default {
           position: "bottom",
           labels: {
             fontColor: "#727272",
-            fontSize: 16
+            fontSize: 15
           }
         }
       }

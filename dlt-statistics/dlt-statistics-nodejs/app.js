@@ -6,12 +6,15 @@ var logger = require('morgan');
 
 // var indexRouter = require('./routes/index');
 // var usersRouter = require('./routes/users');
-var apiouter = require('./routes/v1/index');
+var apirouter = require('./routes/v1/index');
+var apirouter2 = require('./routes/v2/index');
+
 var cors = require('cors');
 
 var app = express();
 var bodyParser = require('body-parser');
 
+var myVariable = "aa";
 app.use(bodyParser.json({limit: '500mb'}));
 app.use(bodyParser.urlencoded({limit: '500mb', extended: true}));
 
@@ -29,7 +32,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/users', usersRouter);
 
 app.use(cors());
-app.use('/v1', apiouter);
+app.use('/v1', apirouter);
+app.use('/v2', apirouter2);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

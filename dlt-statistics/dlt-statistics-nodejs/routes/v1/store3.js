@@ -1,12 +1,9 @@
+/* es - single*/
 var express = require('express');
 var router = express.Router();
 var request = require("request");
 
 router.post('/', function (req, response, next){
-    // request("http://localhost:3000/v1/apid", function( err, res, body ) {
-    //     response.status(200).send();
-    // });
-
     request({
         method: 'POST',
         url: 'http://localhost:9200/dlt_log/log1?pretty',
@@ -15,7 +12,6 @@ router.post('/', function (req, response, next){
         },
         body: req.body.mydata,
         json: true
-
     }, function(err, res, body) {
         if (err) {
             console.log(err);
@@ -24,7 +20,5 @@ router.post('/', function (req, response, next){
         //console.log(body);
         response.status(200).send({ status: res });
     });
-
-
 });
 module.exports = router;

@@ -68,7 +68,8 @@ function getError() {
     });
 }
 
-router.post('/', function (req, res, next){
+router.get('/', function (req, res, next){
+    console.log(req.query.hid);
     getInfo().then(function () {
         return getWarn();
     }).then(function () {

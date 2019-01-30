@@ -1,17 +1,19 @@
 <template>
   <div class="dlt-header">
-    <div id="home"><img src="../assets/logo2.png" style="margin-top: 7%">
+    <div id="home" :style="hoverStyle" @mouseover="mouseOver" @click="gotohome"><img src="../assets/logo2.png"  style="left: 0; margin-top: 4%; width: 35%; height: 65%">
       <span style="font-size: 13px; font-weight: bolder;">DLT Log Statistics</span>
     </div>
-    <div id="set-period">
-      <div class="userinput" style="right: 0">
-        <label for="minute" style="font-size: 10px;">Minute : </label>
+    <div id="not-home">
+      <div class="userinput">
+        <label for="minute" style="font-size: 12px;">Minute : </label>
         <input type="text" id="minute" placeholder="0-60" style="width: 40px;font-size: 10px" v-model="serverParams.interval_m">
-        <label for="minute" style="font-size: 10px;">Second : </label>
+        <label for="minute" style="font-size: 12px;">Second : </label>
         <input type="text" id="second" placeholder="0-60" style="width: 40px;font-size: 10px" v-model="serverParams.interval_s">
-        <button type="button" class="btn btn-primary btn-sm" @click="changeInterval">Change!</button>
+        <!--<button type="button" class="btn btn-primary btn-sm" @click="changeInterval">Change!</button>-->
+        <button id="change-button" @click="changeInterval">Change!</button>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -24,11 +26,13 @@ export default {
         interval_s: 0,
         interval_m: 0
       },
-      timer: ''
+      timer: '',
+      hoverStyle: ''
     }
   },
   created: function () {
     // this.timer = setInterval(this.fillData, 2000) // 5초
+    this.initInterval()
   },
   methods: {
     changeInterval () {
@@ -41,6 +45,20 @@ export default {
         .then(response => {
           alert(response.statusText)
         })
+    },
+    initInterval () {
+      this.$http
+        .get('http://localhost:3000/v1/interval')
+        .then(response => {
+          this.serverParams.interval_s = response.data.interval_s
+          this.serverParams.interval_m = response.data.interval_m
+        })
+    },
+    gotohome () {
+      this.$router.push({name: 'Home'})
+    },
+    mouseOver () {
+      this.hoverStyle = 'cursor: pointer;'
     }
   }
 }
@@ -49,11 +67,11 @@ export default {
 <style scoped>
 .dlt-header{
   position: absolute;
-  top: 0px;
+  top: 0;
   width: 100%;
   height: 7%;
   left: 0;
-  background-color: #ccc4bf;
+  background-color: #e4dcd3;
 }
 #home{
   position: absolute;
@@ -63,18 +81,27 @@ export default {
   z-index: 2;
   border-right: 3px solid white;
 }
-#set-period{
+#not-home{
   position: absolute;
-  left: 15%;
-  width: 85%;
+  left:  15%;
+  width: 100%;
   height: 100%;
-  margin-top: 1.5%;
-  margin-left: 2%;
-  z-index: 2;
-  /*background-color: #ccc4bf;*/
+}
+.userinput{
+  position: absolute;
+  right: 17%;
+  top: 25%;
 }
 img{
   width: 80px;
+  height: 40px;
+}
+#change-button{
+  background-color: #002c5f;
+  color: white;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 70px;
   height: 40px;
 }
 </style>
