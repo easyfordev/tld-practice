@@ -1,0 +1,17 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+import DltSectionDetail from '../components/DltSectionDetail'
+// import HelloWorld from '@/components/HelloWorld'
+
+Vue.use(Router)
+
+export default new Router({
+  routes: [
+    {
+      path: '/:hid',
+      name: 'dlt-section-detail',
+      component: DltSectionDetail,
+      props: true
+    }
+  ]
+})
