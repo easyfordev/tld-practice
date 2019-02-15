@@ -1,0 +1,22 @@
+{
+	"doc" : {
+		"properties" : {
+			"ecuid" : {
+				"type" : "keyword"
+			},
+			"apid" : {
+				"type" : "keyword"
+			},
+			"subtype" : {
+				"type" : "keyword"
+			},
+			"dlt_index" : {
+				"type" : "integer"
+			},
+			"time" : {
+				"type" : "date",
+				"format" : "yyyy/MM/dd HH:mm:ss"
+			}
+		}
+	}
+}
