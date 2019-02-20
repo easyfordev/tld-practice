@@ -1,0 +1,76 @@
+[ 가이드라인 이탈 여부 ]
+- Face Detection이 안된다면, 가이드라인을 이탈했다고 감지(네모로 안그려진다면, 가이드라인을 이탈한 것)
+- 각도를 최대한 정면으로 하기 위해, 일부러 yaw에 대한 민감성이 적은 모델을 사용하면 좋을 듯(조금이라도 회전각이 생기면 Detection을 못하는 모델로)
+- Python, opencv2 사용
+
+https://www.superdatascience.com/blogs/opencv-face-detection
+https://realpython.com/face-detection-in-python-using-a-webcam/
+예제 코드는 굉장히 많음
+- 가장 많이 쓰는 종류
+Haar
+LBP
+HOG (HOG가 인식률 제일 좋음)
+
+* Recognition은 누가 어떤 사람인지까지 알아보는거, Detection은 얼굴만 찾아내는 것
+
+[ 이미지 전처리 ]
+- 회전하기(Face alignment, affine transformation)
+라이브러리 1)
+import openface
+해서 openface.AlignDlib()
+랜드마크 찾아서 회전시키는 코드)
+https://gist.github.com/ageitgey/82d0ea0fdb56dc93cb9b716e7ceb364b
+
+라이브러리 2)
+import imutils
+예제 코드)
+https://www.pyimagesearch.com/2017/05/22/face-alignment-with-opencv-and-python/
+
+- crop과정 
+	동일하게 Face Detectection 이용
+	Detection 된 얼굴영역 + a 부분을 가져오면 된다
+	위에서 제시한 모든 Face Detection 코드에서 기본적으로 cropping 하고 있음
+예제 코드)
+https://stackoverflow.com/questions/13211745/detect-face-then-autocrop-pictures
+
+[ Realtime 얼굴 feature 찾기 ]
+- 68 Face Landmark Detection
+- python dlib에서 제공하는 훈련된 모델 사용 다운받아야 함
+http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+http://dlib.net/face_landmark_detection.py.html
+
+- Facial Landmark Detection using OpenCV
+https://www.learnopencv.com/facemark-facial-landmark-detection-using-opencv/
+
+- 랜드마크 찾는 코드
+https://gist.github.com/ageitgey/ae340db3e493530d5e1f9c15292e5c74
+
+https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/
+
+
+[ 얼굴 추적, 마스크 이동하며 붙어있기(같은 각도로 움직이게하는거, 같은 거리만큼 평행이동) ]
+1. 얼굴 tracking 하기
+- Face tracking
+dlib.correlation_tracker()
+https://www.guidodiepen.nl/2017/02/detecting-and-tracking-a-face-with-python-and-opencv/
+
+- opencv3에서 자체적으로 tracking 하는거 있음
+cv2.TrackerCSRT_create()
+https://www.learnopencv.com/object-tracking-using-opencv-cpp-python/
+https://www.learnopencv.com/face-detection-opencv-dlib-and-deep-learning-c-python/
+
+2. 3D Model Object tracking하기
+- openCV => 근데 이건 그냥 물체 tracking 하는 것 같음
+예제와 튜토리얼들
+https://www.intorobotics.com/how-to-detect-and-track-object-with-opencv/
+https://www.pyimagesearch.com/2018/07/23/simple-object-tracking-with-opencv/
+
+- openCV + Unity3D
+https://github.com/hasanavi/OpenCV-Unity3D-Object-Tracking
+
+- 생각해보니 그냥 tracking보다는 3d rendered object를 control하는 방법을 알면 될 듯
+
+
+
+
+
