@@ -1,0 +1,1143 @@
+diff -urN ./dlt-viewer/BuildDltViewer.pro.user ./dlt-viewer-statistics/BuildDltViewer.pro.user
+--- ./dlt-viewer/BuildDltViewer.pro.user	1970-01-01 09:00:00.000000000 +0900
++++ ./dlt-viewer-statistics/BuildDltViewer.pro.user	2019-02-20 09:24:16.718844854 +0900
+@@ -0,0 +1,326 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<!DOCTYPE QtCreatorProject>
++<!-- Written by QtCreator 4.8.0, 2019-02-20T09:24:16. -->
++<qtcreator>
++ <data>
++  <variable>EnvironmentId</variable>
++  <value type="QByteArray">{532abfce-698f-442f-9a8e-30fa6069304b}</value>
++ </data>
++ <data>
++  <variable>ProjectExplorer.Project.ActiveTarget</variable>
++  <value type="int">0</value>
++ </data>
++ <data>
++  <variable>ProjectExplorer.Project.EditorSettings</variable>
++  <valuemap type="QVariantMap">
++   <value type="bool" key="EditorConfiguration.AutoIndent">true</value>
++   <value type="bool" key="EditorConfiguration.AutoSpacesForTabs">false</value>
++   <value type="bool" key="EditorConfiguration.CamelCaseNavigation">true</value>
++   <valuemap type="QVariantMap" key="EditorConfiguration.CodeStyle.0">
++    <value type="QString" key="language">Cpp</value>
++    <valuemap type="QVariantMap" key="value">
++     <value type="QByteArray" key="CurrentPreferences">CppGlobal</value>
++    </valuemap>
++   </valuemap>
++   <valuemap type="QVariantMap" key="EditorConfiguration.CodeStyle.1">
++    <value type="QString" key="language">QmlJS</value>
++    <valuemap type="QVariantMap" key="value">
++     <value type="QByteArray" key="CurrentPreferences">QmlJSGlobal</value>
++    </valuemap>
++   </valuemap>
++   <value type="int" key="EditorConfiguration.CodeStyle.Count">2</value>
++   <value type="QByteArray" key="EditorConfiguration.Codec">UTF-8</value>
++   <value type="bool" key="EditorConfiguration.ConstrainTooltips">false</value>
++   <value type="int" key="EditorConfiguration.IndentSize">4</value>
++   <value type="bool" key="EditorConfiguration.KeyboardTooltips">false</value>
++   <value type="int" key="EditorConfiguration.MarginColumn">80</value>
++   <value type="bool" key="EditorConfiguration.MouseHiding">true</value>
++   <value type="bool" key="EditorConfiguration.MouseNavigation">true</value>
++   <value type="int" key="EditorConfiguration.PaddingMode">1</value>
++   <value type="bool" key="EditorConfiguration.ScrollWheelZooming">true</value>
++   <value type="bool" key="EditorConfiguration.ShowMargin">false</value>
++   <value type="int" key="EditorConfiguration.SmartBackspaceBehavior">0</value>
++   <value type="bool" key="EditorConfiguration.SmartSelectionChanging">true</value>
++   <value type="bool" key="EditorConfiguration.SpacesForTabs">true</value>
++   <value type="int" key="EditorConfiguration.TabKeyBehavior">0</value>
++   <value type="int" key="EditorConfiguration.TabSize">8</value>
++   <value type="bool" key="EditorConfiguration.UseGlobal">true</value>
++   <value type="int" key="EditorConfiguration.Utf8BomBehavior">1</value>
++   <value type="bool" key="EditorConfiguration.addFinalNewLine">true</value>
++   <value type="bool" key="EditorConfiguration.cleanIndentation">true</value>
++   <value type="bool" key="EditorConfiguration.cleanWhitespace">true</value>
++   <value type="bool" key="EditorConfiguration.inEntireDocument">false</value>
++  </valuemap>
++ </data>
++ <data>
++  <variable>ProjectExplorer.Project.PluginSettings</variable>
++  <valuemap type="QVariantMap">
++   <valuelist type="QVariantList" key="ClangCodeModel.CustomCommandLineKey"/>
++   <value type="bool" key="ClangCodeModel.UseGlobalConfig">true</value>
++  </valuemap>
++ </data>
++ <data>
++  <variable>ProjectExplorer.Project.Target.0</variable>
++  <valuemap type="QVariantMap">
++   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop Qt 5.12.0 GCC 64bit</value>
++   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop Qt 5.12.0 GCC 64bit</value>
++   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.qt5.5120.gcc_64_kit</value>
++   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
++   <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
++   <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
++    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/easy/workspace/dlt-viewer/build-BuildDltViewer-Desktop_Qt_5_12_0_GCC_64bit-Debug</value>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">qmake</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
++      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibrary">true</value>
++      <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
++      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
++      <value type="bool" key="QtProjectManager.QMakeBuildStep.SeparateDebugInfo">false</value>
++      <value type="bool" key="QtProjectManager.QMakeBuildStep.UseQtQuickCompiler">false</value>
++     </valuemap>
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
++      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
++      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
++      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
++      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
++      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
++    </valuemap>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
++      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
++      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
++      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
++      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
++      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
++    </valuemap>
++    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
++    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
++    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Debug</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
++    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
++    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
++   </valuemap>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
++    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/easy/workspace/dlt-viewer/build-BuildDltViewer-Desktop_Qt_5_12_0_GCC_64bit-Release</value>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">qmake</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
++      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibrary">false</value>
++      <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
++      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
++      <value type="bool" key="QtProjectManager.QMakeBuildStep.SeparateDebugInfo">false</value>
++      <value type="bool" key="QtProjectManager.QMakeBuildStep.UseQtQuickCompiler">true</value>
++     </valuemap>
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
++      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
++      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
++      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
++      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
++      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
++    </valuemap>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
++      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
++      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
++      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
++      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
++      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
++    </valuemap>
++    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
++    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
++    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Release</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
++    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
++    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
++   </valuemap>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
++    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/easy/workspace/dlt-viewer/build-BuildDltViewer-Desktop_Qt_5_12_0_GCC_64bit-Profile</value>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">qmake</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
++      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibrary">true</value>
++      <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
++      <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
++      <value type="bool" key="QtProjectManager.QMakeBuildStep.SeparateDebugInfo">true</value>
++      <value type="bool" key="QtProjectManager.QMakeBuildStep.UseQtQuickCompiler">true</value>
++     </valuemap>
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.1">
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
++      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
++      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">false</value>
++      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments"></value>
++      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
++      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
++    </valuemap>
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
++     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
++      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Make</value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.MakeStep</value>
++      <valuelist type="QVariantList" key="Qt4ProjectManager.MakeStep.BuildTargets"/>
++      <value type="bool" key="Qt4ProjectManager.MakeStep.Clean">true</value>
++      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeArguments">clean</value>
++      <value type="QString" key="Qt4ProjectManager.MakeStep.MakeCommand"></value>
++      <value type="bool" key="Qt4ProjectManager.MakeStep.OverrideMakeflags">false</value>
++     </valuemap>
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
++    </valuemap>
++    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
++    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
++    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Profile</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Profile</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
++    <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
++    <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
++   </valuemap>
++   <value type="int" key="ProjectExplorer.Target.BuildConfigurationCount">3</value>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
++    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
++     <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">0</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy</value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
++    </valuemap>
++    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">1</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy Configuration</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.DefaultDeployConfiguration</value>
++   </valuemap>
++   <value type="int" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.PluginSettings"/>
++   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.0">
++    <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
++    <value type="bool" key="Analyzer.QmlProfiler.FlushEnabled">false</value>
++    <value type="uint" key="Analyzer.QmlProfiler.FlushInterval">1000</value>
++    <value type="QString" key="Analyzer.QmlProfiler.LastTraceFile"></value>
++    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectSystime">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableBranchSim">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableCacheSim">false</value>
++    <value type="bool" key="Analyzer.Valgrind.Callgrind.EnableEventToolTips">true</value>
++    <value type="double" key="Analyzer.Valgrind.Callgrind.MinimumCostRatio">0.01</value>
++    <value type="double" key="Analyzer.Valgrind.Callgrind.VisualisationMinimumCostRatio">10</value>
++    <value type="bool" key="Analyzer.Valgrind.FilterExternalIssues">true</value>
++    <value type="int" key="Analyzer.Valgrind.LeakCheckOnFinish">1</value>
++    <value type="int" key="Analyzer.Valgrind.NumCallers">25</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.RemovedSuppressionFiles"/>
++    <value type="int" key="Analyzer.Valgrind.SelfModifyingCodeDetection">1</value>
++    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
++    <value type="bool" key="Analyzer.Valgrind.ShowReachable">false</value>
++    <value type="bool" key="Analyzer.Valgrind.TrackOrigins">true</value>
++    <value type="QString" key="Analyzer.Valgrind.ValgrindExecutable">valgrind</value>
++    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
++     <value type="int">0</value>
++     <value type="int">1</value>
++     <value type="int">2</value>
++     <value type="int">3</value>
++     <value type="int">4</value>
++     <value type="int">5</value>
++     <value type="int">6</value>
++     <value type="int">7</value>
++     <value type="int">8</value>
++     <value type="int">9</value>
++     <value type="int">10</value>
++     <value type="int">11</value>
++     <value type="int">12</value>
++     <value type="int">13</value>
++     <value type="int">14</value>
++    </valuelist>
++    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
++    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">src</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">src2</value>
++    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/easy/Desktop/dlt-viewer-statistics/src/src.pro</value>
++    <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.ProFile">src/src.pro</value>
++    <value type="QString" key="RunConfiguration.Arguments"></value>
++    <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
++    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
++    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
++    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
++    <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
++    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
++    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
++    <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
++    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/easy/workspace/dlt-viewer/build-BuildDltViewer-Desktop_Qt_5_12_0_GCC_64bit-Debug/debug</value>
++   </valuemap>
++   <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
++  </valuemap>
++ </data>
++ <data>
++  <variable>ProjectExplorer.Project.TargetCount</variable>
++  <value type="int">1</value>
++ </data>
++ <data>
++  <variable>ProjectExplorer.Project.Updater.FileVersion</variable>
++  <value type="int">20</value>
++ </data>
++ <data>
++  <variable>Version</variable>
++  <value type="int">20</value>
++ </data>
++</qtcreator>
+Binary files ./dlt-viewer/.git/index and ./dlt-viewer-statistics/.git/index differ
+diff -urN ./dlt-viewer/.git/logs/HEAD ./dlt-viewer-statistics/.git/logs/HEAD
+--- ./dlt-viewer/.git/logs/HEAD	2019-02-20 08:58:12.896538411 +0900
++++ ./dlt-viewer-statistics/.git/logs/HEAD	2019-01-17 09:01:07.214198000 +0900
+@@ -1 +1 @@
+-0000000000000000000000000000000000000000 b438bef7e0aa1a61cd39f342a7ba511540951f52 easyfordev <easyfordev8@gmail.com> 1550620692 +0900	clone: from https://github.com/GENIVI/dlt-viewer.git
++0000000000000000000000000000000000000000 b438bef7e0aa1a61cd39f342a7ba511540951f52 easy <easy@easy-ubuntu-16.(none)> 1547683267 +0900	clone: from https://github.com/GENIVI/dlt-viewer.git
+diff -urN ./dlt-viewer/.git/logs/refs/heads/master ./dlt-viewer-statistics/.git/logs/refs/heads/master
+--- ./dlt-viewer/.git/logs/refs/heads/master	2019-02-20 08:58:12.896538411 +0900
++++ ./dlt-viewer-statistics/.git/logs/refs/heads/master	2019-01-17 09:01:07.214198000 +0900
+@@ -1 +1 @@
+-0000000000000000000000000000000000000000 b438bef7e0aa1a61cd39f342a7ba511540951f52 easyfordev <easyfordev8@gmail.com> 1550620692 +0900	clone: from https://github.com/GENIVI/dlt-viewer.git
++0000000000000000000000000000000000000000 b438bef7e0aa1a61cd39f342a7ba511540951f52 easy <easy@easy-ubuntu-16.(none)> 1547683267 +0900	clone: from https://github.com/GENIVI/dlt-viewer.git
+diff -urN ./dlt-viewer/.git/logs/refs/remotes/origin/HEAD ./dlt-viewer-statistics/.git/logs/refs/remotes/origin/HEAD
+--- ./dlt-viewer/.git/logs/refs/remotes/origin/HEAD	2019-02-20 08:58:12.884538722 +0900
++++ ./dlt-viewer-statistics/.git/logs/refs/remotes/origin/HEAD	2019-01-17 09:01:07.214198000 +0900
+@@ -1 +1 @@
+-0000000000000000000000000000000000000000 b438bef7e0aa1a61cd39f342a7ba511540951f52 easyfordev <easyfordev8@gmail.com> 1550620692 +0900	clone: from https://github.com/GENIVI/dlt-viewer.git
++0000000000000000000000000000000000000000 b438bef7e0aa1a61cd39f342a7ba511540951f52 easy <easy@easy-ubuntu-16.(none)> 1547683267 +0900	clone: from https://github.com/GENIVI/dlt-viewer.git
+diff -urN ./dlt-viewer/hmc_dlt_statistics_config.ini ./dlt-viewer-statistics/hmc_dlt_statistics_config.ini
+--- ./dlt-viewer/hmc_dlt_statistics_config.ini	1970-01-01 09:00:00.000000000 +0900
++++ ./dlt-viewer-statistics/hmc_dlt_statistics_config.ini	2019-02-14 15:50:06.458729000 +0900
+@@ -0,0 +1,2 @@
++seconds 5
++minutes 0
+\ No newline at end of file
+diff -urN ./dlt-viewer/hmc_dltviewlogconfig.ini ./dlt-viewer-statistics/hmc_dltviewlogconfig.ini
+--- ./dlt-viewer/hmc_dltviewlogconfig.ini	1970-01-01 09:00:00.000000000 +0900
++++ ./dlt-viewer-statistics/hmc_dltviewlogconfig.ini	2019-02-01 14:37:45.293637000 +0900
+@@ -0,0 +1,3 @@
++info #0000ff
++warn #ffb200
++error #ff0000
+diff -urN ./dlt-viewer/qdlt/qdltmsg.cpp ./dlt-viewer-statistics/qdlt/qdltmsg.cpp
+--- ./dlt-viewer/qdlt/qdltmsg.cpp	2019-02-20 08:58:13.080533635 +0900
++++ ./dlt-viewer-statistics/qdlt/qdltmsg.cpp	2019-02-20 09:16:28.177842465 +0900
+@@ -137,7 +137,6 @@
+     return gmDateTime.toString("yyyy/MM/dd hh:mm:ss");
+ }
+ 
+-
+ bool QDltMsg::setMsg(const QByteArray& buf, bool withStorageHeader)
+ {
+     unsigned int offset;
+diff -urN ./dlt-viewer/src/main.cpp ./dlt-viewer-statistics/src/main.cpp
+--- ./dlt-viewer/src/main.cpp	2019-02-20 08:58:13.084533532 +0900
++++ ./dlt-viewer-statistics/src/main.cpp	2019-01-28 11:41:49.064761000 +0900
+@@ -16,25 +16,21 @@
+  * For further information see http://www.genivi.org/.
+  * @licence end@
+  */
+-
+ #include <QModelIndex>
+ #include <QApplication>
+ #include "mainwindow.h"
+ #include "optmanager.h"
+-
++using namespace std;
+ int main(int argc, char *argv[])
+ {
+ #if QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)
+     QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+     QApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
+ #endif
+-
+     QApplication a(argc, argv);
+-
+     QStringList arguments = a.arguments();
+     OptManager *opt = OptManager::getInstance();
+     opt->parse(&arguments);
+-
+     MainWindow w;
+     /* check variable commandline_finished
+        instead of stopping during constructor run
+@@ -45,8 +41,10 @@
+     {
+         return 0;
+     }
+-
+     w.show();
++    w.myTimer = new QTimer(&w);
++    QObject::connect(w.myTimer, SIGNAL(timeout()), &w, SLOT(sendToServer()));
+ 
++    w.myTimer->start(1000);
+     return a.exec();
+ }
+diff -urN ./dlt-viewer/src/mainwindow.cpp ./dlt-viewer-statistics/src/mainwindow.cpp
+--- ./dlt-viewer/src/mainwindow.cpp	2019-02-20 08:58:13.084533532 +0900
++++ ./dlt-viewer-statistics/src/mainwindow.cpp	2019-02-20 09:22:30.385333654 +0900
+@@ -41,6 +41,9 @@
+ #include <QNetworkProxyFactory>
+ #include <QtAlgorithms>
+ 
++#include <QNetworkAccessManager>
++#include <QNetworkRequest>
++#include <QNetworkReply>
+ /**
+  * From QDlt.
+  * Must be a "C" include to interpret the imports correctly
+@@ -77,6 +80,11 @@
+ #include "fieldnames.h"
+ #include "tablemodel.h"
+ 
++QByteArray postData = "[";
++QByteArray postData2 = "";
++QNetworkAccessManager *manager;
++QNetworkRequest request;
++
+ MainWindow::MainWindow(QWidget *parent) :
+     QMainWindow(parent),
+     ui(new Ui::MainWindow),
+@@ -121,7 +129,7 @@
+         connectAll();
+     }
+ 
+-    /* start timer for autoconnect */
++//    /* start timer for autoconnect */
+     connect(&timer, SIGNAL(timeout()), this, SLOT(timeout()));
+     timer.start(AUTOCONNECT_DEFAULT_TIME);
+ 
+@@ -136,7 +144,8 @@
+     newCompleter = new QCompleter(&m_CompleterModel,this);
+ 
+     /* what for do we need the next 2 lines ? */
+-    draw_timer.setSingleShot (true);
++    draw_timer.setSingleShot (true);QNetworkRequest request;
++
+     connect(&draw_timer, SIGNAL(timeout()), this, SLOT(draw_timeout()));
+ 
+     if ( true == DltSettingsManager::getInstance()->value("StartUpMinimized",false).toBool() )
+@@ -145,8 +154,58 @@
+         this->setWindowState(Qt::WindowMinimized);
+     }
+ 
++    /* Modified by Yiji Choi */
++    manager = new QNetworkAccessManager();
++    QObject::connect(manager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinished(QNetworkReply*)));
++}
++bool MainWindow::intervalChanged(){
++    QString content;
++    QFile file("../../dlt-viewer/hmc_dlt_statistics_config.ini");
++    int newInterval;
++    int s=0,m=0;
++
++    if (file.open(QIODevice::ReadOnly)) { // If congif file exists,
++        QTextStream stream(&file);
++        for(int i=0;i<3;i++){
++            QString subtype, color;
++            QStringList list;
++            content = stream.readLine();
++            list = content.split(' ');
++
++            if(list[0] == "seconds"){
++                s = list[1].toInt();
++            } else if(list[0] == "minutes"){
++                m = list[1].toInt();
++            }
++        }
++        newInterval = s*1000 + m*60000;
++        qDebug() <<"New Interval : " << newInterval;
++        if(newInterval != sendInterval){
++            sendInterval = newInterval;
++            return true;
++        } else{
++            return false;
++        }
++    } else { // Else if config file does not exist, set default value
++        // sendInterval = 5000;
++   }
++}
++void MainWindow::writeDataToFile(){
++    QFile file("../../dlt-viewer/hmc_dlt_statistics_data.ini");
++    if (file.open(QIODevice::ReadWrite | QIODevice::Append)) {
++        QTextStream stream(&file);
++        stream << postData2 << endl;
++     }
++    postData2.clear();
+ }
++void MainWindow::abc()
++{
++    qDebug() << "update";
+ 
++    request.setUrl(QUrl("http://localhost:3000/v1/store2"));
++    request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json; charset=utf-8");
++    manager->post(request, postData);
++}
+ MainWindow::~MainWindow()
+ {
+     //qDebug() << "Clean up";
+@@ -292,11 +351,9 @@
+     ui->tableView->setModel(tableModel);
+ 
+     /* For future use enable HTML View in Table */
+-    //HtmlDelegate* delegate = new HtmlDelegate();
+-    //ui->tableView->setItemDelegate(delegate);
+-    //ui->tableView->setItemDelegateForColumn(FieldNames::Payload,delegate);
+-
+-
++    HtmlDelegate* delegate = new HtmlDelegate();
++    ui->tableView->setItemDelegate(delegate);
++    ui->tableView->setItemDelegateForColumn(FieldNames::Payload,delegate);
+ 
+ 
+     /* preset the witdth of the columns somwhow */
+@@ -3481,7 +3538,45 @@
+      }
+  }
+ 
++void MainWindow::managerFinished(QNetworkReply *reply) {
++    return ;
++}
++void MainWindow::sendToServer(){
++    // Send buffer to Server
++
++    if(intervalChanged()==true){
++        myTimer->setInterval(sendInterval);
++    }
++
++    // Parsing buffer
++    if (postData.toStdString() == "["){ // If buffer is empty
++        QString emptyRequest = "{\"postdata\":[]}";
++        postData = emptyRequest.toUtf8();
++    }else{
++        int pos = postData.lastIndexOf(QChar(','));
++        postData = postData.left(pos);
++        postData.append("]");
++
++        QString prefix = "{\"postdata\":";
++        QString postfix = "}";
++        QString fullRequest;
++        fullRequest = prefix + postData + postfix;
++        postData = fullRequest.toUtf8();
+ 
++      //  qDebug() << postData;
++        request.setUrl(QUrl("http://localhost:3000/v1/store2"));
++        request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json; charset=utf-8");
++        manager->post(request, postData);
++
++        writeDataToFile();
++    }
++
++    // Clear buffer
++    postData.clear();
++    postData  = "[";
++
++}
++int temp_index =0;
+ void MainWindow::updateIndex()
+ {
+     QList<QDltPlugin*> activeViewerPlugins;
+@@ -3514,6 +3609,24 @@
+     {
+      qmsg.setMsg(qfile.getMsg(num));
+ 
++     /* Modified from here! */
++     QString js="[";
++          js.append( "\""+ QString::number(temp_index) + "\",");
++          js.append( "\""+ qmsg.getEcuid() + "\",");
++          js.append( "\""+ qmsg.getApid() + "\",");
++          js.append( "\""+ qmsg.getSubtypeString() + "\",");
++          js.append( "\""+ qmsg.getTimeString() + "\"");
++          js.append("],");
++     postData.append(js.toUtf8());
++
++     QString js2 = "";
++     js2.append( qmsg.getEcuid() + ",");
++     js2.append( qmsg.getApid() + ",");
++     js2.append( qmsg.getSubtypeString() + ",");
++     js2.append( qmsg.getTimeString() + ",");
++     js2.append( QString::number(temp_index++) + "\n");
++     postData2.append(js2.toUtf8());
++
+      if ( true == pluginsEnabled ) // we check the general plugin enabled/disabled switch
+      {
+      for(int i = 0; i < activeViewerPlugins.size(); i++)
+diff -urN ./dlt-viewer/src/mainwindow.h ./dlt-viewer-statistics/src/mainwindow.h
+--- ./dlt-viewer/src/mainwindow.h	2019-02-20 08:58:13.084533532 +0900
++++ ./dlt-viewer-statistics/src/mainwindow.h	2019-02-20 09:21:06.911289798 +0900
+@@ -44,6 +44,7 @@
+ #include "searchtablemodel.h"
+ #include "ui_mainwindow.h"
+ #include <QStringListModel>
++#include <QNetworkAccessManager>
+ 
+ /**
+  * When ecu items buffer size exceeds this while using
+@@ -116,10 +117,16 @@
+     ~MainWindow();
+ 
+     QCompleter *newCompleter;
++    QTimer *myTimer;
+ 
+ private:
+     Ui::MainWindow *ui;
+ 
++    /* Modified by Yiji Choi :) */
++    int sendInterval;
++    bool intervalChanged();
++    void writeDataToFile();
++
+     /* Timer for connecting to ECUs */
+     QTimer timer;
+ 
+@@ -356,6 +363,11 @@
+     void closeEvent(QCloseEvent *event);
+ 
+ private slots:
++    void managerFinished(QNetworkReply *reply);
++    void abc();
++    void sendToServer();
++
++private slots:
+     void reloadLogFileProgressMax(quint64 num);
+     void reloadLogFileProgress(quint64 num);
+     void reloadLogFileProgressText(QString text);
+@@ -553,7 +565,6 @@
+     /* store startLoggingDateTime when logging first data */
+     QDateTime startLoggingDateTime;
+ 
+-
+ };
+ 
+ #endif // MAINWINDOW_H
+diff -urN ./dlt-viewer/src/mainwindow.ui ./dlt-viewer-statistics/src/mainwindow.ui
+--- ./dlt-viewer/src/mainwindow.ui	2019-02-20 08:58:13.084533532 +0900
++++ ./dlt-viewer-statistics/src/mainwindow.ui	2019-01-21 16:38:45.463037000 +0900
+@@ -79,7 +79,7 @@
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+-       <number>15</number>
++       <number>18</number>
+       </attribute>
+      </widget>
+     </item>
+@@ -91,7 +91,7 @@
+      <x>0</x>
+      <y>0</y>
+      <width>1001</width>
+-     <height>17</height>
++     <height>22</height>
+     </rect>
+    </property>
+    <widget class="QMenu" name="menuFile">
+@@ -649,7 +649,7 @@
+             <bool>false</bool>
+            </attribute>
+            <attribute name="headerDefaultSectionSize">
+-            <number>26</number>
++            <number>57</number>
+            </attribute>
+            <attribute name="headerMinimumSectionSize">
+             <number>26</number>
+diff -urN ./dlt-viewer/src/tablemodel.cpp ./dlt-viewer-statistics/src/tablemodel.cpp
+--- ./dlt-viewer/src/tablemodel.cpp	2019-02-20 08:58:13.088533428 +0900
++++ ./dlt-viewer-statistics/src/tablemodel.cpp	2019-02-20 09:23:52.911401817 +0900
+@@ -20,6 +20,7 @@
+ #include <QtGui>
+ #include <QApplication>
+ #include <qmessagebox.h>
++#include <QTextEdit>
+ 
+ #include "tablemodel.h"
+ #include "fieldnames.h"
+@@ -28,6 +29,11 @@
+ #include "optmanager.h"
+ #include "dlt_protocol.h"
+ 
++#include <QCoreApplication>
++#include <QDir>
++#include <QFile>
++#include <QFileInfo>
++#include <QTextStream>
+ 
+ static int lastrow = -1; // necessary because object tablemodel can not be changed, so no member variable can be used
+ char buffer[DLT_VIEWER_LIST_BUFFER_SIZE];
+@@ -56,7 +62,6 @@
+ 
+ }
+ 
+-
+ TableModel::TableModel(const QString & /*data*/, QObject *parent)
+      : QAbstractTableModel(parent)
+  {
+@@ -67,6 +72,33 @@
+      emptyForceFlag = false;
+      loggingOnlyMode = false;
+      lastrow = -1;
++
++     /* Modified by Yiji Choi from here */
++     QString content;
++     QFile file("../../dlt-viewer/hmc_dltviewlogconfig.ini");
++
++     if (file.open(QIODevice::ReadOnly)) { // If congif file exists,
++         QTextStream stream(&file);
++         for(int i=0;i<3;i++){
++             QString subtype, color;
++             QStringList list;
++             content = stream.readLine();
++             list = content.split(' ');
++
++             if(list[0] == "info"){
++                 infoColor = list[1];
++             } else if(list[0] == "warn"){
++                 warnColor = list[1];
++             } else if(list[0] == "error"){
++                 errorColor = list[1];
++             }
++         }
++     } else { // Else if config file does not exist, set default value
++         infoColor = "#000000";
++         warnColor = "#000000";
++         errorColor = "#000000";
++    }
++
+  }
+ 
+  TableModel::~TableModel()
+@@ -110,7 +142,7 @@
+          {
+              msg = QDltMsg();
+          }
+-         else
++         else /* get the message with the selected item id */
+          {
+            getmessage( index.row(), filterposindex, &decodeflag, &msg, &lastmsg, qfile, &success);
+ 
+@@ -143,29 +175,102 @@
+               }
+          }
+ 
++         /*
++          * Modified by Yiji Choi from here *
++                                            */
++         QString log_level = msg.getSubtypeString();
++         int flag = 0;
++
++         if(log_level == QString("info")){
++             flag = 1;
++         } else if(log_level == QString("warn")){
++             flag = 2;
++         } else if(log_level == QString("error")){
++             flag = 3;
++         }
+ 
+          switch(index.column())
+          {
+          case FieldNames::Index:
+              /* display index */
+-             return QString("%L1").arg(qfile->getMsgFilterPos(index.row()));
++             if(flag == 1){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(qfile->getMsgFilterPos(index.row())).arg(infoColor);
++             } else if(flag == 2){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(qfile->getMsgFilterPos(index.row())).arg(warnColor);
++             } else if(flag == 3){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(qfile->getMsgFilterPos(index.row())).arg(errorColor);
++             } else {
++                 return QString("%L1").arg(qfile->getMsgFilterPos(index.row()));
++             }
+          case FieldNames::Time:
+-             if( project->settings->automaticTimeSettings == 0 )
+-                return QString("%1.%2").arg(msg.getGmTimeWithOffsetString(project->settings->utcOffset,project->settings->dst)).arg(msg.getMicroseconds(),6,10,QLatin1Char('0'));
+-             else
+-                return QString("%1.%2").arg(msg.getTimeString()).arg(msg.getMicroseconds(),6,10,QLatin1Char('0'));
++             if(flag == 1){
++                 if( project->settings->automaticTimeSettings == 0 ){
++                     return QString("<span style=\" color:%3;\">%1.%2</span>").arg(msg.getGmTimeWithOffsetString(project->settings->utcOffset,project->settings->dst)).arg(msg.getMicroseconds(),6,10,QLatin1Char('0')).arg(infoColor);;
++                 } else
++                    return QString("<span style=\" color:%3;\">%1.%2</span>").arg(msg.getTimeString()).arg(msg.getMicroseconds(),6,10,QLatin1Char('0')).arg(infoColor);;
++                 //return QString("<span style=\" color:#00a000;\">%L1</span>").arg(qfile->getMsgFilterPos(index.row()));
++             } else if(flag == 2){
++                 if( project->settings->automaticTimeSettings == 0 ){
++                     return QString("<span style=\" color:%3;\">%1.%2</span>").arg(msg.getGmTimeWithOffsetString(project->settings->utcOffset,project->settings->dst)).arg(msg.getMicroseconds(),6,10,QLatin1Char('0')).arg(warnColor);;
++                 } else
++                    return QString("<span style=\" color:%3;\">%1.%2</span>").arg(msg.getTimeString()).arg(msg.getMicroseconds(),6,10,QLatin1Char('0')).arg(warnColor);;
++             } else if(flag == 3){
++                 if( project->settings->automaticTimeSettings == 0 ){
++                     return QString("<span style=\" color:%3;\">%1.%2</span>").arg(msg.getGmTimeWithOffsetString(project->settings->utcOffset,project->settings->dst)).arg(msg.getMicroseconds(),6,10,QLatin1Char('0')).arg(errorColor);;
++                 } else
++                    return QString("<span style=\" color:%3;\">%1.%2</span>").arg(msg.getTimeString()).arg(msg.getMicroseconds(),6,10,QLatin1Char('0')).arg(errorColor);;
++             } else {
++                 if( project->settings->automaticTimeSettings == 0 ){
++                     return QString("%1.%2").arg(msg.getGmTimeWithOffsetString(project->settings->utcOffset,project->settings->dst)).arg(msg.getMicroseconds(),6,10,QLatin1Char('0'));
++                 }else
++                    return QString("%1.%2").arg(msg.getTimeString()).arg(msg.getMicroseconds(),6,10,QLatin1Char('0'));
++             }
+          case FieldNames::TimeStamp:
+-             return QString("%1.%2").arg(msg.getTimestamp()/10000).arg(msg.getTimestamp()%10000,4,10,QLatin1Char('0'));
++             if(flag == 1){
++                 return QString("<span style=\" color:%3;\">%1.%2</span>").arg(msg.getTimestamp()/10000).arg(msg.getTimestamp()%10000,4,10,QLatin1Char('0')).arg(infoColor);
++             } else if(flag == 2){
++                 return QString("<span style=\" color:%3;\">%1.%2</span>").arg(msg.getTimestamp()/10000).arg(msg.getTimestamp()%10000,4,10,QLatin1Char('0')).arg(warnColor);
++             } else if(flag == 3){
++                 return QString("<span style=\" color:%3;\">%1.%2</span>").arg(msg.getTimestamp()/10000).arg(msg.getTimestamp()%10000,4,10,QLatin1Char('0')).arg(errorColor);
++             } else {
++                 return QString("%1.%2").arg(msg.getTimestamp()/10000).arg(msg.getTimestamp()%10000,4,10,QLatin1Char('0'));
++             }
+          case FieldNames::Counter:
+-             return QString("%1").arg(msg.getMessageCounter());
++             if(flag == 1){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getMessageCounter()).arg(infoColor);
++             } else if(flag == 2){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getMessageCounter()).arg(warnColor);
++             } else if(flag == 3){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getMessageCounter()).arg(errorColor);
++             } else {
++                 return QString("%1").arg(msg.getMessageCounter());
++             }
+          case FieldNames::EcuId:
+-             return msg.getEcuid();
++             //return msg.getEcuid();
++             if(flag == 1){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getEcuid()).arg(infoColor);
++             } else if(flag == 2){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getEcuid()).arg(warnColor);
++             } else if(flag == 3){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getEcuid()).arg(errorColor);
++             } else {
++                return msg.getEcuid();
++             }
+          case FieldNames::AppId:
+              switch(project->settings->showApIdDesc)
+              {
+              case 0:
+-                 return msg.getApid();
++                 if(flag == 1){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getApid()).arg(infoColor);
++                 } else if(flag == 2){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getApid()).arg(warnColor);
++                 } else if(flag == 3){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getApid()).arg(errorColor);
++                 } else {
++                    return msg.getApid();
++                 }
+                  break;
++                // return msg.getApid();
+              case 1:
+                    for(int num = 0; num < project->ecu->topLevelItemCount (); num++)
+                     {
+@@ -175,20 +280,56 @@
+                          ApplicationItem * appitem = (ApplicationItem *) ecuitem->child(numapp);
+                          if(appitem->id == msg.getApid() && !appitem->description.isEmpty())
+                          {
+-                            return appitem->description;
++                             if(flag == 1){
++                                 return QString("<span style=\" color:%2;\">%1</span>").arg(appitem->description).arg(infoColor);
++                             } else if(flag == 2){
++                                 return QString("<span style=\" color:%2;\">%1</span>").arg(appitem->description).arg(warnColor);
++                             } else if(flag == 3){
++                                 return QString("<span style=\" color:%2;\">%1</span>").arg(appitem->description).arg(errorColor);
++                             } else {
++                                 return appitem->description;
++                             }
++                            //return appitem->description;
+                          }
+                      }
+-                    }
+-                   return QString("Apid: %1 (No description)").arg(msg.getApid());
++                    } // end of for
++
++                   if(flag == 1){
++                       return QString("<span style=\" color:%2;\">Apid: %1 (No description)</span>").arg(msg.getApid()).arg(infoColor);
++                   } else if(flag == 2){
++                       return QString("<span style=\" color:%2;\">Apid: %1 (No description)</span>").arg(msg.getApid()).arg(warnColor);
++                   } else if(flag == 3){
++                       return QString("<span style=\" color:%2;\">Apid: %1 (No description)</span>").arg(msg.getApid()).arg(errorColor);
++                   } else {
++                       return QString("Apid: %1 (No description)").arg(msg.getApid());
++                   }
+                  break;
+               default:
+-                 return msg.getApid();
++                 if(flag == 1){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getApid()).arg(infoColor);
++                 } else if(flag == 2){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getApid()).arg(warnColor);
++                 } else if(flag == 3){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getApid()).arg(errorColor);
++                 } else {
++                    return msg.getApid();
++                 }
++                 //return msg.getApid();
+              }
+          case FieldNames::ContextId:
+              switch(project->settings->showCtIdDesc)
+              {
+              case 0:
+-                 return msg.getCtid();
++                 if(flag == 1){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getCtid()).arg(infoColor);
++                 } else if(flag == 2){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getCtid()).arg(warnColor);
++                 } else if(flag == 3){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getCtid()).arg(errorColor);
++                 } else {
++                    return msg.getCtid();
++                 }
++                 //return msg.getCtid();
+                  break;
+              case 1:
+                    for(int num = 0; num < project->ecu->topLevelItemCount (); num++)
+@@ -209,44 +350,138 @@
+                          }
+                      }
+                     }
+-                   return  QString("Ctid: %1 (No description)").arg(msg.getCtid());
++                   if(flag == 1){
++                       return QString("<span style=\" color:%2;\">Ctid: %1 (No description)</span>").arg(msg.getCtid()).arg(infoColor);
++                   } else if(flag == 2){
++                       return QString("<span style=\" color:%2;\">Ctid: %1 (No description)</span>").arg(msg.getCtid()).arg(warnColor);
++                   } else if(flag == 3){
++                       return QString("<span style=\" color:%2;\">Ctid: %1 (No description)</span>").arg(msg.getCtid()).arg(errorColor);
++                   } else {
++                      return  QString("Ctid: %1 (No description)").arg(msg.getCtid());
++                   }
+                  break;
+               default:
+-                 return msg.getCtid();
++                 if(flag == 1){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getCtid()).arg(infoColor);
++                 } else if(flag == 2){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getCtid()).arg(warnColor);
++                 } else if(flag == 3){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getCtid()).arg(errorColor);
++                 } else {
++                    return msg.getCtid();
++                 }
+              }
+          case FieldNames::SessionId:
+              switch(project->settings->showSessionName){
+              case 0:
+-                 return QString("%1").arg(msg.getSessionid());
++                 if(flag == 1){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSessionid()).arg(infoColor);
++                 } else if(flag == 2){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSessionid()).arg(warnColor);
++                 } else if(flag == 3){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSessionid()).arg(errorColor);
++                 } else {
++                     return QString("%1").arg(msg.getSessionid());
++                 }
+                  break;
+              case 1:
+                  if(!msg.getSessionName().isEmpty())
+                  {
+-                    return msg.getSessionName();
++                     if(flag == 1){
++                         return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSessionName()).arg(infoColor);
++                     } else if(flag == 2){
++                         return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSessionName()).arg(warnColor);
++                     } else if(flag == 3){
++                         return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSessionName()).arg(errorColor);
++                     } else {
++                         return QString("%1").arg(msg.getSessionName());
++                     }
++                   // return msg.getSessionName();
+                  }
+                 else
+                  {
+-                    return QString("%1").arg(msg.getSessionid());
++                     if(flag == 1){
++                         return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSessionid()).arg(infoColor);
++                     } else if(flag == 2){
++                         return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSessionid()).arg(warnColor);
++                     } else if(flag == 3){
++                         return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSessionid()).arg(errorColor);
++                     } else {
++                         return QString("%1").arg(msg.getSessionid());
++                     }
++                    //return QString("%1").arg(msg.getSessionid());
+                  }
+                  break;
+               default:
+-                 return QString("%1").arg(msg.getSessionid());
++                 if(flag == 1){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSessionid()).arg(infoColor);
++                 } else if(flag == 2){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSessionid()).arg(warnColor);
++                 } else if(flag == 3){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSessionid()).arg(errorColor);
++                 } else {
++                     return QString("%1").arg(msg.getSessionid());
++                 }
+              }
+          case FieldNames::Type:
+-             return msg.getTypeString();
++             if(flag == 1){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getTypeString()).arg(infoColor);
++             } else if(flag == 2){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getTypeString()).arg(warnColor);
++             } else if(flag == 3){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getTypeString()).arg(errorColor);
++             } else {
++                return msg.getTypeString();
++             }
++             //return msg.getTypeString();
+          case FieldNames::Subtype:
+-             return msg.getSubtypeString();
++             if(flag == 1){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSubtypeString()).arg(infoColor);
++             } else if(flag == 2){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSubtypeString()).arg(warnColor);
++             } else if(flag == 3){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getSubtypeString()).arg(errorColor);
++             } else {
++                return msg.getSubtypeString();
++             }
+          case FieldNames::Mode:
+-             return msg.getModeString();
++             if(flag == 1){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getModeString()).arg(infoColor);
++             } else if(flag == 2){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getModeString()).arg(warnColor);
++             } else if(flag == 3){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getModeString()).arg(errorColor);
++             } else {
++                return msg.getModeString();
++             }
+          case FieldNames::ArgCount:
+-             return QString("%1").arg(msg.getNumberOfArguments());
++             if(flag == 1){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getNumberOfArguments()).arg(infoColor);
++             } else if(flag == 2){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getNumberOfArguments()).arg(warnColor);
++             } else if(flag == 3){
++                 return QString("<span style=\" color:%2;\">%1</span>").arg(msg.getNumberOfArguments()).arg(errorColor);
++             } else {
++                 return QString("%1").arg(msg.getNumberOfArguments());
++             }
+          case FieldNames::Payload:
+              if( true == loggingOnlyMode)
+              {
+                  return QString("Logging only Mode! Disable in Project Settings!");
+              }
++             else{
++                 if(flag == 1){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.toStringPayload()).arg(infoColor);
++                 } else if(flag == 2){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.toStringPayload()).arg(warnColor);
++                 } else if(flag == 3){
++                     return QString("<span style=\" color:%2;\">%1</span>").arg(msg.toStringPayload()).arg(errorColor);
++                 } else {
++                     return msg.toStringPayload();
++                 }
++             }
+              /* display payload */
+-             return msg.toStringPayload();
++
+          default:
+              if (index.column()>=FieldNames::Arg0)
+              {
+@@ -263,6 +498,7 @@
+ 
+              }
+          }
++         /* End of modification */
+      }
+ 
+      if ( role == Qt::ForegroundRole )
+@@ -272,12 +508,13 @@
+          // Color the last search row
+          if(lastSearchIndex != -1 && filterposindex == qfile->getMsgFilterPos(lastSearchIndex))
+          {
+-             return QVariant(QBrush(DltUiUtils::optimalTextColor(searchBackgroundColor())));
++             return QVariant(QBrush(DltUiUtils::optimalTextColor(searchBackgroundColor())));            
+          }
+          else if (QColor(qfile->checkMarker(msg)).isValid())
+          {
+            QColor color = qfile->checkMarker(msg);
+            return QVariant(QBrush(DltUiUtils::optimalTextColor(color)));
++           //return QVariant(QBrush(DltUiUtils::optimalTextColor(Qt::yellow)));
+          }
+          else if(project->settings->autoMarkFatalError && !QColor(qfile->checkMarker(msg)).isValid() && ( msg.getSubtypeString() == "error" || msg.getSubtypeString() == "fatal")  )
+          {
+@@ -285,7 +522,7 @@
+          }
+          else
+          {
+-            return QVariant(QBrush(QColor(0,0,0)));
++             return QVariant(QBrush(QColor(0,0,0)));
+          }
+      }
+ 
+@@ -414,8 +651,10 @@
+          return 0;
+      else if(true == loggingOnlyMode)
+          return 1;
+-     else
++     else{
+          return qfile->sizeFilter();
++     }
++
+  }
+ 
+  void TableModel::modelChanged()
+diff -urN ./dlt-viewer/src/tablemodel.h ./dlt-viewer-statistics/src/tablemodel.h
+--- ./dlt-viewer/src/tablemodel.h	2019-02-20 08:58:13.088533428 +0900
++++ ./dlt-viewer-statistics/src/tablemodel.h	2019-01-18 15:52:44.500773000 +0900
+@@ -60,10 +60,14 @@
+     void setLoggingOnlyMode(bool loggingOnlyMode) { this->loggingOnlyMode = loggingOnlyMode; }
+ 
+     void setLastSearchIndex(int idx) {this->lastSearchIndex = idx;}
++
+ private:
+     int lastSearchIndex;
+     bool emptyForceFlag;
+     bool loggingOnlyMode;
++    QString infoColor;
++    QString warnColor;
++    QString errorColor;
+ 
+     QColor searchBackgroundColor() const;
+ };
